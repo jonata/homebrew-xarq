@@ -11,6 +11,12 @@ class Xarq < Formula
     regex(/^v?(\d+(?:\.\d+)+(?:-[a-z]+\d*)?)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/jonata/homebrew-xarq/releases/download/xarq-26.10-alpha"
+    sha256 cellar: :any, arm64_tahoe:   "68931478c5fb00d62a25d512e55cdd8ada4a28e4edc2c7c8912dd791d6e0b285"
+    sha256 cellar: :any, arm64_sequoia: "cf9ced104cc5a61c9f18bac9be1169ae3e6ca033700fb0e1b061b9e97ce1422a"
+  end
+
   depends_on "cmake" => :build
   depends_on "pkgconf" => :build
   depends_on "harfbuzz"
