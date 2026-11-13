@@ -7,7 +7,7 @@
 Needs a Mac with Apple Silicon (M1 or later).
 
 ```sh
-brew install jonata/xarq/xarq
+brew install xarq-design/xarq/xarq
 ```
 
 Then add it to your Applications folder:
@@ -21,7 +21,7 @@ You can also start it from a terminal with `xarq`.
 To follow the main branch instead of the latest release:
 
 ```sh
-brew install --HEAD jonata/xarq/xarq
+brew install --HEAD xarq-design/xarq/xarq
 ```
 
 ## Notes
@@ -29,4 +29,4 @@ brew install --HEAD jonata/xarq/xarq
 - Prebuilt bottles exist for macOS 15 and 26 on Apple Silicon. On older versions Homebrew builds XarQ from source.
 - Intel Macs aren't supported: Homebrew no longer ships prebuilt Intel versions of Qt and the other libraries XarQ needs, so installing would mean compiling all of them.
 - PDF, DWG, GDAL, Graphviz and the formats XarQ loads at runtime (camera RAW, ICC profiles, JPEG 2000, JPEG XL, archives, DjVu) aren't enabled in this build yet.
-- Linux users can use the AppImage from the [releases page](https://github.com/jonata/xarq/releases) instead.
+- Linux users can use the AppImage from the [releases page](https://github.com/XarQ-design/xarq/releases) instead.

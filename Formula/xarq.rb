@@ -1,10 +1,10 @@
 class Xarq < Formula
   desc "Vector illustration and page layout app descended from Xara"
   homepage "https://xarq.org"
-  url "https://github.com/jonata/xarq/archive/refs/tags/v26.10-alpha.tar.gz"
+  url "https://github.com/XarQ-design/xarq/archive/refs/tags/v26.10-alpha.tar.gz"
   sha256 "694505724f1cc60fd794cbe171e6a7e0cfa36c0a1dca95ff35dc2dd2957a33dc"
   license all_of: ["GPL-2.0-only", "OFL-1.1", "Ubuntu-font-1.0"]
-  head "https://github.com/jonata/xarq.git", branch: "main"
+  head "https://github.com/XarQ-design/xarq.git", branch: "main"
 
   livecheck do
     url :stable
@@ -12,7 +12,7 @@ class Xarq < Formula
   end
 
   bottle do
-    root_url "https://github.com/jonata/homebrew-xarq/releases/download/xarq-26.10-alpha"
+    root_url "https://github.com/XarQ-design/homebrew-xarq/releases/download/xarq-26.10-alpha"
     sha256 cellar: :any, arm64_tahoe:   "68931478c5fb00d62a25d512e55cdd8ada4a28e4edc2c7c8912dd791d6e0b285"
     sha256 cellar: :any, arm64_sequoia: "cf9ced104cc5a61c9f18bac9be1169ae3e6ca033700fb0e1b061b9e97ce1422a"
   end
