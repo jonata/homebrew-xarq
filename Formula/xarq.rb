@@ -25,6 +25,8 @@ class Xarq < Formula
   depends_on "libcdr"
   depends_on "libetonyek"
   depends_on "libfreehand"
+  # libetonyek-0.1.pc names liblangtag, so pkg-config needs it to find libetonyek.
+  depends_on "liblangtag"
   depends_on "libmspub"
   depends_on "libmwaw"
   depends_on "libpagemaker"
