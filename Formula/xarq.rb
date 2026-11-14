@@ -25,8 +25,6 @@ class Xarq < Formula
   depends_on "libcdr"
   depends_on "libetonyek"
   depends_on "libfreehand"
-  # libetonyek-0.1.pc names liblangtag, so pkg-config needs it to find libetonyek.
-  depends_on "liblangtag"
   depends_on "libmspub"
   depends_on "libmwaw"
   depends_on "libpagemaker"
@@ -46,6 +44,15 @@ class Xarq < Formula
       -DXARQ_GDAL=OFF
       -DCMAKE_DISABLE_FIND_PACKAGE_GDCM=ON
     ]
+    # Homebrew builds libetonyek without liblangtag, but libetonyek-0.1.pc (0.1.13) still requires it, so
+    # pkg-config would reject libetonyek. An empty liblangtag.pc stands in for it during the build.
+    (buildpath/"pc-shim/liblangtag.pc").write <<~PC
+      Name: liblangtag
+      Description: Empty stand-in: Homebrew's libetonyek is built without liblangtag
+      Version: 0.6.7
+    PC
+    ENV.prepend_path "PKG_CONFIG_PATH", buildpath/"pc-shim"
+
     # Clang makes narrowing inside braces an error, where GCC only warns.
     args << "-DCMAKE_CXX_FLAGS=-Wno-narrowing"
 
