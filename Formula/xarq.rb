@@ -1,8 +1,8 @@
 class Xarq < Formula
   desc "Vector illustration and page layout app descended from Xara"
   homepage "https://xarq.org"
-  url "https://github.com/XarQ-design/xarq/archive/refs/tags/v26.10-alpha.tar.gz"
-  sha256 "694505724f1cc60fd794cbe171e6a7e0cfa36c0a1dca95ff35dc2dd2957a33dc"
+  url "https://github.com/XarQ-design/xarq/archive/refs/tags/v26.11-alpha.tar.gz"
+  sha256 "41cffdfd6766ca360d7d3c7fd8da1717df8136b248d73cb39c2baf08f8a0ee2f"
   license all_of: ["GPL-2.0-only", "OFL-1.1", "Ubuntu-font-1.0"]
   head "https://github.com/XarQ-design/xarq.git", branch: "main"
 
