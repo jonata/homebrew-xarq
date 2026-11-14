@@ -12,9 +12,9 @@ class Xarq < Formula
   end
 
   bottle do
-    root_url "https://github.com/XarQ-design/homebrew-xarq/releases/download/xarq-26.10-alpha"
-    sha256 cellar: :any, arm64_tahoe:   "68931478c5fb00d62a25d512e55cdd8ada4a28e4edc2c7c8912dd791d6e0b285"
-    sha256 cellar: :any, arm64_sequoia: "cf9ced104cc5a61c9f18bac9be1169ae3e6ca033700fb0e1b061b9e97ce1422a"
+    root_url "https://github.com/XarQ-design/homebrew-xarq/releases/download/xarq-26.11-alpha"
+    sha256 cellar: :any, arm64_tahoe:   "94c9ddbd267fbce8cc78a71707fd4bcb9219c1db1b236275edd82df23a4abb1f"
+    sha256 cellar: :any, arm64_sequoia: "39843d84d2f02902c2d1ce27620ac099e718df9e1816299fcec730f43881b44b"
   end
 
   depends_on "cmake" => :build
